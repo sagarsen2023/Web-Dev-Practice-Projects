@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+/* For 1080p and above devices the following CSS will be applied */
+@media (min-width: 1024px) {
+    nav {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1% 8%;
+        color: #acacac;
+        font-size: 1.5vw;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        z-index: 100000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li a,
+    nav ul li a::after {
+        transition: 1s;
+        color: #acacac;
+        text-decoration: none;
+        padding-right: 1.7vw;
+    }
+
+    nav ul li a:hover {
+        color: #ffff2a;
+        font-weight: bold;
+        transition: 500ms;
+    }
+
+    nav button,
+    .contact button,
+    nav button::after,
+    .contact button::after {
+        font-size: 1vw;
+        border: none;
+        background-color: #ffff2a;
+        padding: 1vw 2vw;
+        transition: 500ms;
+    }
+
+    nav button:hover,
+    .contact button:hover {
+        background-color: black;
+        color: #ffff2a;
+        box-shadow: 0 0 0 2px #ffff2a;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .main {
+        margin: 7% 8%;
+        width: 53%;
+    }
+
+    .main h1 {
+        font-size: 8.2vh;
+        font-family: 'Prata-Regular', serif;
+        font-weight: 500;
+    }
+
+    .main p,
+    .project1 div p,
+    .project2 div p,
+    .about p,
+    .contact p {
+        font-family: 'Inter', sans-serif;
+        padding-top: 2vh;
+        font-size: 2.5vh;
+        line-height: 4vh;
+        width: 80%;
+        font-weight: 400;
+        color: #acacac;
+    }
+
+    .compIcons,
+    .projects {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .compIcons img {
+        height: 4vh;
+        width: auto;
+    }
+
+    .projects {
+        margin-top: 15vh;
+    }
+
+    .project1 img,
+    .project2 img {
+        width: 40vw;
+    }
+
+    .project1 div h1,
+    .project2 div h1,
+    .about h1,
+    .contact h1 {
+        font-family: 'Prata', serif;
+        font-weight: 500;
+        padding-top: 3vh;
+        font-size: 5.5vh;
+    }
+
+    .about {
+        background-color: #2e2e33;
+        display: flex;
+        margin-top: 10vh;
+        justify-content: space-between;
+        padding: 4% 8%;
+    }
+
+    .contact {
+        width: 70%;
+        padding: 4% 8%;
+        margin-bottom: 2%;
+    }
+
+    .contact button {
+        margin-top: 2%;
+    }
+
+    .left {
+        padding-right: 1%;
+    }
+
+    .right {
+        padding-left: 1%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5% 8%;
+        background-color: #2e2e33;
+    }
+
+    footer h3 {
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+
+    .socialIcons {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    footer a img {
+        padding-right: 21px;
+        width: 54px;
+    }
+
+    .Hamburger {
+        display: none;
+    }
+}
+
+/* For tablets */
+@media only screen and (max-width:1023px) and (min-width: 600px) {
+    nav {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3% 5%;
+        font-size: 2vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #acacac;
+    }
+    
+    nav ul{
+        width: 0;
+        background-color: #2e2e33;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 10%;
+        list-style: none;
+        text-align: center;
+        border-radius: 25px;
+        transition: width 0.2s;
+        overflow: hidden;
+    }
+
+    nav li {
+        padding-bottom: 30%;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        font-size: medium;
+        color: #acacac;
+    }
+    
+    .getinTouch{
+        display: none;
+    }
+
+    .Hamburger {
+        background-color: transparent;
+        width: 10vw;
+        height: auto;
+        border: none;
+    }
+
+    .Hamburger img {
+        cursor: pointer;
+    }
+    .Hamburger img {
+        cursor: pointer;
+    }
+
+    .main {
+        margin: 8% 5%;
+    }
+
+    .main h1,
+    .contact h1 {
+        font-size: 6vh;
+        font-weight: 500;
+    }
+
+    .main p,
+    .projects p,
+    .about p,
+    .contact p {
+        font-family: 'Inter', sans-serif;
+        padding-top: 2vh;
+        font-size: 2vh;
+        line-height: 3vh;
+        width: 80%;
+        font-weight: 400;
+        color: #acacac;
+    }
+
+    .compIcons {
+        margin: 6% 5%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .compIcons img {
+        padding-bottom: 10%;
+        width: 15vh;
+    }
+
+    .projects {
+        margin: 3% 5%;
+    }
+
+    .projects img {
+        margin-top: 6vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .projects h1,
+    .about h1 {
+        margin-top: 2%;
+        font-size: 5vh;
+    }
+
+    .about {
+        margin-top: 6%;
+        padding: 3% 5%;
+        background-color: #2e2e33;
+    }
+
+    .contact {
+        margin: 6% 5%;
+        margin-bottom: 7%;
+    }
+
+    .contact button,
+    .contact button::after {
+        font-size: 10%;
+        margin-top: 2%;
+        font-size: 2vw;
+        border: none;
+        background-color: #ffff2a;
+        padding: 2.5vw 4vw;
+        transition: 500ms;
+    }
+
+    .contact button:hover {
+        background-color: black;
+        color: #ffff2a;
+        box-shadow: 0 0 0 2px #ffff2a;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 5%;
+        color: #acacac;
+        background-color: #2e2e33;
+    }
+
+    footer img {
+        padding-right: 21px;
+        width: 54px;
+    }
+
+    footer h3 {
+        font-size: 3vw;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    nav {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3% 5%;
+        font-size: 2vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #acacac;
+    }
+    
+    nav ul{
+        width: 0;
+        background-color: #2e2e33;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 10%;
+        list-style: none;
+        text-align: center;
+        border-radius: 25px;
+        transition: width 0.2s;
+        overflow: hidden;
+    }
+
+
+    nav li {
+        padding-bottom: 30%;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        font-size: medium;
+        color: #acacac;
+    }
+    
+    .getinTouch{
+        display: none;
+    }
+
+    .Hamburger {
+        background-color: transparent;
+        width: 10vw;
+        height: auto;
+        border: none;
+    }
+
+    .Hamburger img {
+        cursor: pointer;
+    }
+
+    .main {
+        margin: 8% 5%;
+    }
+
+    .main h1,
+    .contact h1 {
+        font-size: 6vh;
+        font-weight: 500;
+    }
+
+    .main p,
+    .projects p,
+    .about p,
+    .contact p {
+        font-family: 'Inter', sans-serif;
+        padding-top: 2vh;
+        font-size: 2vh;
+        line-height: 3vh;
+        width: 80%;
+        font-weight: 400;
+        color: #acacac;
+    }
+
+    .compIcons {
+        margin: 6% 6%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .compIcons img {
+        padding-bottom: 10%;
+        width: 17vh;
+    }
+
+    .projects {
+        margin: 3% 5%;
+    }
+
+    .projects img {
+        margin-top: 6vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .projects h1,
+    .about h1 {
+        margin-top: 2%;
+        font-size: 5vh;
+    }
+
+    .about {
+        margin-top: 6%;
+        padding: 3% 5%;
+        background-color: #2e2e33;
+    }
+
+    .contact {
+        margin: 6% 5%;
+        margin-bottom: 7%;
+    }
+
+    .contact button,
+    .contact button::after {
+        font-size: 10%;
+        margin-top: 2%;
+        font-size: 2vw;
+        border: none;
+        background-color: #ffff2a;
+        padding: 2.5vw 4vw;
+        transition: 500ms;
+    }
+
+    .contact button:hover {
+        background-color: black;
+        color: #ffff2a;
+        box-shadow: 0 0 0 2px #ffff2a;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 5%;
+        color: #acacac;
+        background-color: #2e2e33;
+    }
+
+    footer img {
+        padding-right: 21px;
+    }
+
+    footer h3 {
+        font-size: 3vw;
+    }
+}
