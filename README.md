@@ -7,3 +7,7 @@ All my web development projects are uploaded here.
    - Created using classic **HTML** and **CSS**.
    - Responsive Design
    - I created this project to practice the properties of HTML, CSS mainly
+
+2. **A simple notes taking app**
+   - Created using **EJS**, **Express.js**, **node.js** and **fs** module of node.js
+   - I created this project to practice express
