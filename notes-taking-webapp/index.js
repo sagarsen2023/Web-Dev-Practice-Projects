@@ -28,6 +28,12 @@ app.post("/create", (req, res) => {
     });
 })
 
+app.get("/files/:filename", (req, res) => {
+    fs.unlink(`./files/${req.params.filename}`, (err) => {
+        res.redirect("/");
+    })
+})
+
 app.listen(3000, () => {
     console.log('Example app listening on port 3000!');
 });
