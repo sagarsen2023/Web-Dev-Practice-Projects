@@ -20,8 +20,9 @@
         <% if(files.length > 0){ %>
             <% files.forEach(function(val){ %>
                 <div class="bg-zinc-700 w-64 px-4 py-4">
-                    <h1 class="text-xl font-bold mb-2 text-center"><%= val%></h1>
+                    <h1 class="text-xl font-bold mb-2"><%= val%></h1>
                     <p class="text-zinc-200"><%= data[val]%></p>
+                    <button class="px-2 py-2 bg-red-700 w-28 rounded-md hover:bg-red-800 mt-8"><a href="/files/<%= val %>">Delete</a></button>
                   </div>
            <% }) %>
         <% } else { %> 
