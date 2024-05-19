@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-950 text-white">
+    <h1 class="text-xl text-center mb-3">Update post</h1>
+    <form class=" px-6" action="/update/<%=data._id%>" method="post">
+       <div class="flex gap-10">
+        <div>
+            <h1 class="text-sm text-slate-400 font-bold">Title: </h1>
+            <input class="mt-2 px-2 py-1 w-64 bg-zinc-800 font-bold rounded-md" type="text" placeholder="name"
+                name="title" value="<%=data.title%>">
+        </div>
+        <div>
+            <h1 class="text-sm text-slate-400 font-bold">Description:</h1>
+            <textarea class="mt-2 px-2 py-1 w-64 h-36 bg-zinc-800 font-bold rounded-md" name="description"
+                placeholder="post description" ></textarea>
+        </div>
+        <div>
+            <h1 class="text-sm text-slate-400 font-bold">Image URL: </h1>
+            <input class="mt-2 px-2 py-1 w-64 bg-zinc-800 font-bold rounded-md" type="text" name="imageURL"
+                placeholder="Enter valid url" value="<%=data.imageurl%>">
+        </div>
+       </div>
+        <br>
+        <div>
+            <button class="px-3 py-2 bg-green-800 font-bold rounded-lg" type="submit">Update Post</button>
+    </form>
+    </div>
+
+</body>
+</html>
