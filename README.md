@@ -18,3 +18,7 @@ All my web development projects are uploaded here.
 4. **React Password Generator.**
    - Created using **Vite** & **React**.
    - Created to understand the concept of **hooks** in **React**.
+
+5. **Next X Redux.**
+   - Created using **Next.JS** & **Redux**.
+   - Created to understand the working principle of redux-toolkit
