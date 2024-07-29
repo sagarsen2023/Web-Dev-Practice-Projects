@@ -12,7 +12,7 @@ All my web development projects are uploaded here.
 
 3. **Mongo Posts.**
    - Created using **Express JS** with **EJS** template for backend application.
-   - Used **MongoDB** as server.
+   - Used **MongoDB** as database.
    - Developed this project to practice the server side rendering concept.
   
 4. **React Password Generator.**
