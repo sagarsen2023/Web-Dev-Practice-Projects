@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.box1, .box1-clone{
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f00;
+    position: relative;
+    animation-delay: 1s;
+}
+.box1{
+    animation: RedAndBlueBoxAnimation 4s infinite;
+}
+
+.box1-clone{
+    animation: RedAndBlueBoxAnimation 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.box2{
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f00;
+    position: relative;
+    animation: YellowGreenBoxAnimation 4s infinite;
+}
+
+.animation-timing-function-graph{
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f00;
+    position: relative;
+    animation: YellowGreenBoxAnimation 4s infinite;
+    animation-timing-function: ease-out;
+}
+
+/* Creating an animation */
+/* Identifier -> Animation name */
+@keyframes RedAndBlueBoxAnimation {
+    from{
+        /* Initial state */
+        left:0;
+    }
+    to{
+        /* Final state */
+        left: 60%;
+        background-color: blue;
+    }
+}
+
+@keyframes YellowGreenBoxAnimation {
+    0%{
+        /* Initial state */
+        left:0;
+    }
+    50%{
+        /* Intermediate state */
+        left: 70%;
+        color: black;
+        background-color: yellow;
+    }
+    100%{
+        /* Final state */
+        left: 0;
+        background-color: green;
+    }
+}
