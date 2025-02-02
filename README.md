@@ -21,4 +21,16 @@ All my web development projects are uploaded here.
 
 5. **Next X Redux.**
    - Created using **Next.JS** & **Redux**.
-   - Created to understand the working principle of redux-toolkit
+   - Created to understand the working principle of redux-toolkit.
+
+6. **next-with-react-hook-form-and-zod**
+   - Created using **Next.JS** & **React-hook-form**.
+   - Cretaed to understand the implementation of react hook form with validation.
+  
+7. **css things**
+   - Created using **CSS** only.
+   - Cretaed to understand the `animations`, `before`, `after` in CSS.
+
+8. **Backend project production setup**
+   - Created using **Express JS**
+   - Cretaed for understanding the production level setup of a backend application.
