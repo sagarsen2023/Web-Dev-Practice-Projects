@@ -25,12 +25,12 @@ All my web development projects are uploaded here.
 
 6. **next-with-react-hook-form-and-zod**
    - Created using **Next.JS** & **React-hook-form**.
-   - Cretaed to understand the implementation of react hook form with validation.
+   - Created to understand the implementation of react hook form with validation.
   
 7. **css things**
    - Created using **CSS** only.
-   - Cretaed to understand the `animations`, `before`, `after` in CSS.
+   - Created to understand the `animations`, `before`, `after` in CSS.
 
 8. **Backend project production setup**
    - Created using **Express JS**
-   - Cretaed for understanding the production level setup of a backend application.
+   - Created for understanding the production level setup of a backend application.
