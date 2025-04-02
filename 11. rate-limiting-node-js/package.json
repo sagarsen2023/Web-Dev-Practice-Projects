@@ -1,0 +1,16 @@
+{
+  "name": "rate-limiting-node",
+  "version": "1.0.0",
+  "description": "A simple project that demonstrates the concept of rate limiting using node js",
+  "license": "ISC",
+  "author": "Sagar Sen",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
