@@ -54,3 +54,8 @@ All my web development projects are uploaded here.
 
    - Created using **Next Js** and **TypeScript**.
    - Developed this project to experiment with ViewTransition component.
+
+11. **A simple rate limiting system using node js**
+
+   - Created using **Express JS**.
+   - Developed this project to understand the logic and fundamentals of rate limiting concept.
