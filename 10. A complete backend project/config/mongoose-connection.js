@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const envKeys = require("../constants/env-keys");
 const dbgr = require("debug")("development:mongoose-connection");
 
 const connectToDb = async () => {
   try {
-    const mongooseConnection = await mongoose.connect(process.env.MONGODB_URI);
+    const mongooseConnection = await mongoose.connect(envKeys.mongoDbUri);
     dbgr("Connected to mongodb successfully");
     return mongooseConnection;
   } catch (error) {

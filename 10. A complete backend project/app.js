@@ -5,18 +5,16 @@ const connectToDb = require("./config/mongoose-connection");
 const ownerRouter = require("./routes/ownerRouter");
 const usersRouter = require("./routes/usersRouter");
 const productsRouter = require("./routes/productsRouter");
-require("dotenv").config();
 const responseHandler = require("./utils/response-handler");
+const envKeys = require("./constants/env-keys");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = envKeys.serverPort;
 connectToDb();
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "public")));
-app.set("view engine", "ejs");
 
 app.use("/owner", ownerRouter);
 app.use("/users", usersRouter);
